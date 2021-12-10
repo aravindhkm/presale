@@ -1,0 +1,8 @@
+query GetNewWallet($chain: String!, $pid: String!) {
+    getNewWallet(chain: $chain, pid: $pid) {
+        mnemonic
+        address
+        chain
+        name
+    }
+}

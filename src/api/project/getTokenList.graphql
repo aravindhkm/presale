@@ -1,0 +1,13 @@
+query getTokenList {  
+  tokensList(chain: "") {  
+    data {  
+      chain
+      symbol  
+      name  
+      address  
+      decimals  
+      logoURI  
+      minValue  
+    }  
+  }  
+}

@@ -1,0 +1,42 @@
+query GetProjectsForList($size: Int = 3, $page: Int = 1) {
+  projects(size: $size, page: $page) {
+    data {
+      email
+      pid
+      title
+      email
+      address
+      chain
+      description
+      tokenSymbol
+      whitePaper
+      status
+      coinLogo
+      telegramHandle
+      profileImage
+      description
+      price {
+        goal
+        token
+        raised
+      }
+      priceHistory {
+        price
+        date
+      }
+      social {
+        siteUrl
+        linkedIn
+        github
+        telegramChat
+        youtube
+        instagram
+        blog
+        twitter
+      }
+    }
+    page
+    size
+    totalSize
+  }
+}

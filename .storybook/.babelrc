@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ],
+    "@babel/react",
+    "@babel/typescript",
+    "@emotion/babel-preset-css-prop"
+  ],
+  "plugins": [
+    "emotion"
+  ]
+}

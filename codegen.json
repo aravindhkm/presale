@@ -1,0 +1,12 @@
+{
+  "schema": "https://api.app.maxs.pro/",
+  "generates": {
+    "./src/api/gen/requests.ts": {
+      "documents": "src/api/**/*.graphql",
+      "plugins": ["typescript", "typescript-operations", "typescript-react-apollo"],
+      "config": {
+        "withHooks": true
+      }
+    }
+  }
+}

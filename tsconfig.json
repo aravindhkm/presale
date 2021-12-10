@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es5",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "jsxImportSource": "@emotion/react",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "removeComments": false,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2016",
+      "es2017.object",
+      "dom"
+    ],
+    "importHelpers": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./src/*"],
+    },
+    "types": ["node"]
+  },
+  "include": [
+    "./src/**/*",
+  ],
+}

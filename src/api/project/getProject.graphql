@@ -1,0 +1,37 @@
+query GetProject($pid: String) {
+  getProject(pid: $pid) {
+    contractAddress
+    email
+    pid
+    title
+    email
+    address
+    chain
+    description
+    status
+    coinLogo
+    profileImage
+    telegramHandle
+    tokenSymbol
+    price {
+      goal
+      token
+      raised
+      decimals
+    }
+    priceHistory {
+      price
+      date
+    }
+    social {
+      siteUrl
+      linkedIn
+      github
+      telegramChat
+      youtube
+      instagram
+      blog
+      twitter
+    }
+  }
+}

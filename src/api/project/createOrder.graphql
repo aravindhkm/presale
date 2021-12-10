@@ -1,0 +1,33 @@
+mutation CreateOrder(
+  $pid: String!
+  $chain: String!
+  $symbolPaymentToken: String!
+  $decimals: Int!
+  $addressReceiverSender: String!
+  $sendTokensBuy: String!
+  $getTokenBuy: String!
+  $priceUsd: String!
+) {
+  createOrder(
+    data: {
+      pid: $pid
+      chain: $chain
+      symbolPaymentToken: $symbolPaymentToken
+      decimals: $decimals
+      addressReceiverSender: $addressReceiverSender
+      sendTokensBuy: $sendTokensBuy
+      getTokenBuy: $getTokenBuy
+      priceUsd: $priceUsd
+    }
+  ) {
+    pid
+    chain
+    symbolPaymentToken
+    decimals
+    addressReceiverSender
+    sendTokensBuy
+    getTokenBuy
+    addressSendTo
+    priceUsd
+  }
+}
